@@ -10,7 +10,7 @@ import memories from './images/memories.png';
 import useStyles from './styles.js';
 
 const App = () => {
-    const classes = useStyles();
+    const classes = useStyles(); //to apply custom CSS classes to MUI components
     const dispatch = useDispatch();
 
     useEffect(()=> { //React hook that lets you run side effects in your component. Think of side effects as anything that’s outside the normal rendering flow
@@ -25,19 +25,18 @@ const App = () => {
                 <img className={classes.image} src={memories} alt='memories' height="60"/>
             </AppBar> 
             {/* <Grow in> for animation */}
+            <Grow in={true}>
                 <Container>
                     <Grid container justifyContent='space-between' alignItems='stretch' spacing={3}> {/* Lays out items in a grid with space between them and stretched vertically. */}
                         <Grid item xs={12} sm ={7}>
-                       
                             <Posts />
                         </Grid>
                         <Grid item xs={12} sm ={4}>
-                      
                             <Form />
                         </Grid>
                     </Grid>
                 </Container>
-            {/* </Grow> */}
+            </Grow>
         </Container>
         
     );

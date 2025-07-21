@@ -4,7 +4,7 @@ import {getPosts, createPost} from '../controllers/posts.js'; //Importing a spec
 
 const router = express.Router(); //Create a mini "server" (called router) to handle routes separately
 
-router.get('/', getPosts);                                 //When someone visits the root URL http://localhost:5000/, send back "this worksss!!!"
+router.get('/', getPosts);  //When someone visits the root URL http://localhost:5000/, send back "this worksss!!!"
 router.post('/', createPost); 
 
 export default router;

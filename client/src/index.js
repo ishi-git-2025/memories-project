@@ -14,4 +14,4 @@ root.render(
 <Provider store={store}>
     <App />
 </Provider>);
- // First make a root inside the 'root' div, then tell React to put or inject the App inside it
+ // First make a react root inside the 'root' div, then tell React to put or inject the App inside it

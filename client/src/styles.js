@@ -14,6 +14,6 @@ export default makeStyles(() => ({ //when another file imports from makeStyles m
     },
     image: {
       marginLeft: '15px',
-    },
+    }
   }));
 
